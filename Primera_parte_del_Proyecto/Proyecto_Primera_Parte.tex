@@ -1,0 +1,107 @@
+%Queremos hacer en el formato IEEE
+%Entonces requeriremos de otra entrada diferente a la usual...
+% \documentclass[11pt,a4paper]{article}
+
+%Nos hemos guiado de una plantilla ejemplo.
+
+\documentclass[journal]{IEEEtran}
+\hyphenation{op-tical net-work semi-conduc-tor}%PARA arreglar el abstract y los romanos
+%\documentclass[letterpaper, 10 pt, conference]{ieeeconf}
+
+
+\IEEEoverridecommandlockouts  
+
+%\overrideIEEEmargins %Para equilibrar las columnas
+
+%\usepackage[utf8]{inputenc}
+%\usepackage{amsmath}
+%\usepackage{amsfonts}
+%\usepackage{amssymb}
+%\usepackage{multicol}
+%\usepackage{graphicx}
+%\usepackage{multicol}
+
+\title{\LARGE \bf
+		Verificación de la existencia de un ciclo Hamiltoniano en un grafo aleatorio*}
+
+\author{Maquera Briguitte$^{1}$, Farut Jaafar$^{2}$ y Rivera Franklin$^{3}$}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstract}
+	
+	Este trabajo tiene que contener...
+	Este documento es un ejemplo de formato apegado a
+	las normas de IEEE para escribir artículos representativos de un
+	proyecto realizado. Los autores deben seguir las instrucciones,
+	incluyendo formato y tamaño de papel para mantener el
+	estándar de publicación. Este documento puede interpretarse
+	como un set de instrucciones para escribir su artículo o como una
+	plantilla para hacerlo. Como habrá notado, esta primera sección
+	es para generar 
+
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+	
+\section{INTRODUCCIÓN}
+
+{\bf *Presentación del problema general sobre él que versará el trabajo y cómo se integra dentro del uso del lenguaje R y del curso.\\
+*Objetivo del estudio\\
+*Organización del informe\\ }
+
+\vspace{0.5cm}
+• \textbf{Grafo}: Es un diagrama que representa mediante vertices y aristas las relaciones entre pares de elementos y que se usa para resolver problemas l{\'o}gicos, topol{\'o}gicos y de c{\'a}lculo combinatorio.\\
+
+\vspace{1cm}
+• \textbf{Grafo hamiltoniano}: Es aquel grafo que tiene un ciclo hamiltoniano el cual recorre una sola vez cada vertice y el vertice final sea adyacente al primero, de esa forma contiene un camino hamiltoniano o circuito hamiltoniano.\\
+\textbf{¿\underline{C{\'o}mo identificar un}}\\
+\textbf{\underline{grafo hamiltoniano}?}\\
+Contrario al caso de los grafos eulerianos, para el caso de los grafos hamiltonianos no se conoce ninguna condici{\'o}n necesaria y suficiente que los caracterice. Esto es lamentable porque en muchas aplicaciones es fundamental poder determinar si un grafo es hamiltoniano.\\
+\textit{\textbf{Ejemplos de Grafos hamiltonianos}}\\
+
+\textbf{¿\underline{Qu{\'e} es el Lenguaje}}\\
+\textbf{\underline{de programaci{\'o}n R}?}\\
+Es un tipo de lenguaje de programaci{\'o}n el cual es una implementaci{\'o}n del lenguaje de programaci{\'o}n S, creado en Auckland(New Zealand)\\
+•\textbf{Caracter{\'i}sticas}\\
+\textbf{*} R es un lenguaje pensado para la programaci{\'o}n estad{\'i}stica y la creaci{\'o}n de gr{\'a}ficos\\
+\textbf{*} Posee mucho paquetes y librerias\\
+\textbf{*} Es multi-paradigm{\'a}tico y Open Source ya que nos permite una facilidad en el uso de la escritura o implementaci{\'o}n del c{\'o}digo\\
+\textit{\textbf{Nota:}}RStudio es un entorno de desarrollo integrado (IDE) para el lenguaje de programación R, dedicado a la computación estadística y gráficos.\\
+
+• Es la verificaci{\'o}n de un grafo y determinar si es o no es hamiltoniano  pues ya que aunque no hay condici{\'o}n o formula totalmente eficiente para su demostracion, podemos aproximarnos utilizando ciertas condiciones.\\
+• El implemento de la programacion mediante el uso del Lenguaje R en nuestro proyecto para dicha verificacion\\
+• El uso de algunas formulas y teoremas estadisticos para la determinaci{\'o}n de un grafo y verificar si es o no es hamiltoniano\\[5cm]
+
+
+\section{ESTADO DEL ARTE}
+{\bf *Breve mención del aporte que otros artículos científicos han realizado para este problema.\\
+*Mención de al menos 3 artículos científicos que mencionan el problema y las variantes realizadas}
+\begin{enumerate}
+
+\item \textbf{Libro(PDF):}Matem{\'a}tica Discreta "Teoria de Grafos"\\
+\textbf{autores:} Merce Claverol, Ester Simo y Marisa Zaragoza\\
+\textbf{Tema 2:} p{\'a}ginas(38-39)\\[1cm]
+• Este art{\'i}culo nos permiti{\'o} un analisi mas profundo sobre las carateristicas y formas de los grafos hamiltonianos\\
+\item \textbf{Libro(PDF):} Teorema de Dirac y Ore (aplicaciones de la matetica discreta en la vide real)\\[1cm]
+• Este art{\'i}culo nos permiti{\'o} un mejor an{\'a}lisis de los teoremas de Dirac y Ore, loscuales nos permiten la verificacion de un grafo y descubrir si es o no es hamiltoniano\\ 
+\textbf{autores:} Alberto Conejero y Cristian J{\'o}rdan\\[1cm]  
+\item \textbf{Video(Tutorial):}Introducci{\'o}n a los Grafos con igraph\\[1cm]
+• Este tutorial nos permiti{\'o} una mejor visualizacion respecto a lo que ser{\'a} cuando aplicamos grafos en Lenguaje R\\
+\item \textbf{Network Analysis and Visualization with R and igraph}\\[1cm]
+• This page gave us information about the various functions that we can use in Rstudio and also about the igraph package which will help us in the graph drawings in Rstudio
+
+\end{enumerate}
+
+\section{DISEÑO DEL EXPERIMENTO}
+{\bf *Descripción de los objetos, funciones y técnicas a utilizar. }
+\end{document}
