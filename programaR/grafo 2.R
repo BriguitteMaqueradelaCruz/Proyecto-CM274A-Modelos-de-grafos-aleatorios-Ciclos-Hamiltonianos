@@ -1,0 +1,5 @@
+library(igraph)
+my_data <- read.csv(file.choose(),header=TRUE,row.names=1)
+my_matrix <- as.matrix(my_data)
+my_second_network <- graph.adjacency(my_matrix,mode="undirected",diag=FALSE)
+plot(my_second_network)
