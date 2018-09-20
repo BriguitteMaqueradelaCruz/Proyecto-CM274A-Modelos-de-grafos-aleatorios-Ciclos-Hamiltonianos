@@ -1,68 +1,74 @@
-%\documentclass[11pt,a4paper]{article}
-\documentclass[letterpaper, 10 pt, conference]{ieeeconf}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{multicol}
-\usepackage{graphicx}
-\usepackage{multicol}
+%Queremos hacer en el formato IEEE
+%Entonces requeriremos de otra entrada diferente a la usual...
+% \documentclass[11pt,a4paper]{article}
 
-\newcommand{\ds}{\displaystyle}
-\pagestyle{empty}
-\usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
-\usepackage[usenames]{color}
+%Nos hemos guiado de una plantilla ejemplo.
+
+\documentclass[journal]{IEEEtran}
+\hyphenation{op-tical net-work semi-conduc-tor}%PARA arreglar el abstract y los romanos
+%\documentclass[letterpaper, 10 pt, conference]{ieeeconf}
+
+
+\IEEEoverridecommandlockouts  
+
+%\overrideIEEEmargins %Para equilibrar las columnas
+
+%\usepackage[utf8]{inputenc}
+%\usepackage{amsmath}
+%\usepackage{amsfonts}
+%\usepackage{amssymb}
+%\usepackage{multicol}
+%\usepackage{graphicx}
+%\usepackage{multicol}
+
+\title{\LARGE \bf
+		Verificación de la existencia de un ciclo Hamiltoniano en un grafo aleatorio*}
+
+\author{Maquera Briguitte$^{1}$, Farut Jaafar$^{2}$ y Rivera Franklin$^{3}$}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-	\begin{center}
-	\LARGE \noindent {\bf UNIVERSIDAD NACIONAL DE INGENIERÍA}\\
-	{\bf Facultad de Ciencias}\\
-	{\bf Matemática y Ciencias de la computaci{\'o}n}
-	\end{center}
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
 
-	\begin{center}
-	\begin{minipage}[c]{10cm}
-	\includegraphics[scale=0.95]{uni.PNG}
-	\end{minipage}
-	\end{center}
-	\begin{center}
-	\LARGE \textbf{TITULO DEL TRABAJO}\\
-	{\bf "Verificaci{\'o}n de la existencia de un ciclo hamiltoniano en un grafo aleatorio"}
-	\end{center}
-	\begin{center}
-	\Large \textbf{Unidad Acad{\'e}mica}: 
-	\\Facultad de Ciencias\\
-	\textbf{Curso y secci{\'o}n}: 
-	\\Introducci{\'o}n a la Estad{\'i}stica\\ y Probabilidades(CM-274 "A")\\
-	\textbf{Semestre}: 
-	\\2018-II\\
-	\textbf{Profesores}:
-	\\ Zamudio Fernando - C{\'e}sar Lara Ávila\\
-	\textbf{Integrantes}:\\
-	/Jaafar Farut Sahua Torres/\\
-	/Franklin F{\'e}lix Rivera Granados/\\
-	/Briguitte Stefany Maquera de la Cruz/\\
-	\end{center}
-	\begin{center}
-	\LARGE \vfill\textbf{Lima-Per{\'u}}\\
-	\textbf{(2018)}
-	\end{center}
 
-	\LARGE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstract}
 	
-	\textbf{Introducci{\'o}n}}\\[1cm]
+	Este trabajo tiene que contener...
+	Este documento es un ejemplo de formato apegado a
+	las normas de IEEE para escribir artículos representativos de un
+	proyecto realizado. Los autores deben seguir las instrucciones,
+	incluyendo formato y tamaño de papel para mantener el
+	estándar de publicación. Este documento puede interpretarse
+	como un set de instrucciones para escribir su artículo o como una
+	plantilla para hacerlo. Como habrá notado, esta primera sección
+	es para generar 
+
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 	
-\begin{multicols}{2}
-\textbf{¿\underline{Qu{\'e} es un Grafo}?}\\
+\section{INTRODUCCIÓN}
+
+{\bf *Presentación del problema general sobre él que versará el trabajo y cómo se integra dentro del uso del lenguaje R y del curso.\\
+*Objetivo del estudio\\
+*Organización del informe\\ }
+
+\vspace{0.5cm}
 • \textbf{Grafo}: Es un diagrama que representa mediante vertices y aristas las relaciones entre pares de elementos y que se usa para resolver problemas l{\'o}gicos, topol{\'o}gicos y de c{\'a}lculo combinatorio.\\
+
+\vspace{1cm}
 • \textbf{Grafo hamiltoniano}: Es aquel grafo que tiene un ciclo hamiltoniano el cual recorre una sola vez cada vertice y el vertice final sea adyacente al primero, de esa forma contiene un camino hamiltoniano o circuito hamiltoniano.\\
 \textbf{¿\underline{C{\'o}mo identificar un}}\\
 \textbf{\underline{grafo hamiltoniano}?}\\
 Contrario al caso de los grafos eulerianos, para el caso de los grafos hamiltonianos no se conoce ninguna condici{\'o}n necesaria y suficiente que los caracterice. Esto es lamentable porque en muchas aplicaciones es fundamental poder determinar si un grafo es hamiltoniano.\\
 \textit{\textbf{Ejemplos de Grafos hamiltonianos}}\\
-\begin{minipage}[c]{4cm}
-\includegraphics[scale=0.42]{grafo.PNG}
-\end{minipage}\\[1cm]
+
 \textbf{¿\underline{Qu{\'e} es el Lenguaje}}\\
 \textbf{\underline{de programaci{\'o}n R}?}\\
 Es un tipo de lenguaje de programaci{\'o}n el cual es una implementaci{\'o}n del lenguaje de programaci{\'o}n S, creado en Auckland(New Zealand)\\
@@ -71,26 +77,17 @@ Es un tipo de lenguaje de programaci{\'o}n el cual es una implementaci{\'o}n del
 \textbf{*} Posee mucho paquetes y librerias\\
 \textbf{*} Es multi-paradigm{\'a}tico y Open Source ya que nos permite una facilidad en el uso de la escritura o implementaci{\'o}n del c{\'o}digo\\
 \textit{\textbf{Nota:}}RStudio es un entorno de desarrollo integrado (IDE) para el lenguaje de programación R, dedicado a la computación estadística y gráficos.\\
-\begin{minipage}[c]{4cm}
-\includegraphics[scale=0.41]{R.PNG}
-\end{minipage}
-\end{multicols}
 
-
-\begin{center}
-\textbf{\textcolor{blue}{Objetivo del Proyecto}}\\[1cm]
-\end{center}
-\begin{multicols}{2}
 • Es la verificaci{\'o}n de un grafo y determinar si es o no es hamiltoniano  pues ya que aunque no hay condici{\'o}n o formula totalmente eficiente para su demostracion, podemos aproximarnos utilizando ciertas condiciones.\\
 • El implemento de la programacion mediante el uso del Lenguaje R en nuestro proyecto para dicha verificacion\\
 • El uso de algunas formulas y teoremas estadisticos para la determinaci{\'o}n de un grafo y verificar si es o no es hamiltoniano\\[5cm]
-\end{multicols}
 
-\begin{center}
-\textbf{\textcolor{blue}{Estado del arte}}\\[1cm]
-\end{center}
+
+\section{ESTADO DEL ARTE}
+{\bf *Breve mención del aporte que otros artículos científicos han realizado para este problema.\\
+*Mención de al menos 3 artículos científicos que mencionan el problema y las variantes realizadas}
 \begin{enumerate}
-\begin{multicols}{2}
+
 \item \textbf{Libro(PDF):}Matem{\'a}tica Discreta "Teoria de Grafos"\\
 \textbf{autores:} Merce Claverol, Ester Simo y Marisa Zaragoza\\
 \textbf{Tema 2:} p{\'a}ginas(38-39)\\[1cm]
@@ -102,10 +99,9 @@ Es un tipo de lenguaje de programaci{\'o}n el cual es una implementaci{\'o}n del
 • Este tutorial nos permiti{\'o} una mejor visualizacion respecto a lo que ser{\'a} cuando aplicamos grafos en Lenguaje R\\
 \item \textbf{Network Analysis and Visualization with R and igraph}\\[1cm]
 • This page gave us information about the various functions that we can use in Rstudio and also about the igraph package which will help us in the graph drawings in Rstudio
-\end{multicols}
+
 \end{enumerate}
 
-\begin{center}
-\textbf{\textcolor{blue}{Diseño del experimento}}\\
-\end{center}
+\section{DISEÑO DEL EXPERIMENTO}
+{\bf *Descripción de los objetos, funciones y técnicas a utilizar. }
 \end{document}
