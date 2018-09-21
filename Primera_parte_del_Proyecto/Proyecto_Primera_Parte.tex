@@ -36,84 +36,76 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+	
+	The project deals with the implementation of an algorithm that helps us to verify if a random graph is Hamiltonian with the help of the igraph package, libraries and functions that they offer in R language. Use of the Backtracking algorithm to find different solutions.
+\end{abstract}
 
 \begin{abstract}
 	
-	Este trabajo tiene que contener...
-	Este documento es un ejemplo de formato apegado a
-	las normas de IEEE para escribir art{\'i}culos representativos de un
-	proyecto realizado. Los autores deben seguir las instrucciones,
-	incluyendo formato y tamaño de papel para mantener el
-	estándar de publicaci{\'o}n. Este documento puede interpretarse
-	como un set de instrucciones para escribir su art{\'i}culo o como una
-	plantilla para hacerlo. Como habrá notado, esta primera secci{\'o}n
-	es para generar 
+	El proyecto trata sobre la implementaci{\o'}n de un algoritmo que nos ayude a comprobar si un grafo aleatorio es Hamiltoniano  con la ayuda del paquete \textit{igraph}, librerias y funciones que ofrecen en lenguaje R. Utilizaci{\o'}n del algoritmo Backtracking para poder encontrar diferentes soluciones.
 
 \end{abstract}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 	
-\section{INTRODUCCI{\'O}N}
+\section{\large\bf INTRODUCCI{\'O}N}
+ 
+ {\bf Objetivos:}\\
+ \begin{enumerate}
+ 	\item El objetivo de nuestro proyecto es encontrar si existe o no un {\bf Ciclo Hamiltoniano} en un grafo aleatorio dado sus números de aristas y vertices con ayuda de los paquetes que R ofrece.
+ 	\item Utilizaci{\o'}n del algoritmo {\textit Backtraking} como herramienta fundamental para lograr dicho objetivo.
+ \end{enumerate}
+\vspace{0.2mm}
+{\bf Definiciones previas}\\
+\vspace{0.2mm}
 
-{\bf . Presentaci{\'o}n del problema general sobre {\'e}l que versar{\'a} el trabajo y c{\'o}mo se integra dentro del uso del lenguaje R y del curso.\\
-. Objetivo del estudio\\
-. Organización del informe\\ }
-
-\vspace{0.5cm}
 • \textbf{Grafo}: Es un diagrama que representa mediante vertices y aristas las relaciones entre pares de elementos y que se usa para resolver problemas l{\'o}gicos, topol{\'o}gicos y de c{\'a}lculo combinatorio.\\
 
-\vspace{1cm}
+\vspace{0.2mm}
 • \textbf{Grafo hamiltoniano}: Es aquel grafo que tiene un ciclo hamiltoniano el cual recorre una sola vez cada vertice y el vertice final sea adyacente al primero, de esa forma contiene un camino hamiltoniano o circuito hamiltoniano.\\
-\textbf{¿\underline{C{\'o}mo identificar un}}\\
-\textbf{\underline{grafo hamiltoniano}?}\\
-Contrario al caso de los grafos eulerianos, para el caso de los grafos hamiltonianos no se conoce ninguna condici{\'o}n necesaria y suficiente que los caracterice. Esto es lamentable porque en muchas aplicaciones es fundamental poder determinar si un grafo es hamiltoniano.\\
-\textit{\textbf{Ejemplos de Grafos hamiltonianos}}\\
 
-\textbf{¿\underline{Qu{\'e} es el Lenguaje}}\\
-\textbf{\underline{de programaci{\'o}n R}?}\\
+
+•\textbf{¿{C{\'o}mo identificar un grafo hamiltoniano}?}\\
+Contrario al caso de los grafos eulerianos, para el caso de los grafos hamiltonianos no se conoce ninguna condici{\'o}n necesaria y suficiente que los caracterice. Esto es lamentable porque en muchas aplicaciones es fundamental poder determinar si un grafo es hamiltoniano.\\
+
+\vspace{0.2mm}
+•\textbf{¿{Qu{\'e} es el Lenguaje de programaci{\'o}n R}?}\\
+
 Es un tipo de lenguaje de programaci{\'o}n el cual es una implementaci{\'o}n del lenguaje de programaci{\'o}n S, creado en Auckland(New Zealand)\\
-•\textbf{Caracter{\'i}sticas}\\
+
+Caracter{\'i}sticas:\\
 \textbf{*} R es un lenguaje pensado para la programaci{\'o}n estad{\'i}stica y la creaci{\'o}n de gr{\'a}ficos\\
 \textbf{*} Posee mucho paquetes y librerias\\
 \textbf{*} Es multi-paradigm{\'a}tico y Open Source ya que nos permite una facilidad en el uso de la escritura o implementaci{\'o}n del c{\'o}digo\\
 \textit{\textbf{Nota:}}RStudio es un entorno de desarrollo integrado (IDE) para el lenguaje de programación R, dedicado a la computación estadística y gráficos.\\
 
-• Es la verificaci{\'o}n de un grafo y determinar si es o no es hamiltoniano  pues ya que aunque no hay condici{\'o}n o formula totalmente eficiente para su demostracion, podemos aproximarnos utilizando ciertas condiciones.\\
-• El implemento de la programacion mediante el uso del Lenguaje R en nuestro proyecto para dicha verificacion\\
-• El uso de algunas formulas y teoremas estadisticos para la determinaci{\'o}n de un grafo y verificar si es o no es hamiltoniano\\[6cm]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
-\section{ESTADO DEL ARTE}
-{\bf . Breve menci{\'o}n del aporte que otros art{\'i}culos cient{\'i}ficos han realizado para este problema.\\
-. Menci{\'o}n de al menos 3 art{\'i}culos científicos que mencionan el problema y las variantes realizadas}
+\section{\large\bf ESTADO DEL ARTE}
+
 \begin{enumerate}
 
-\item \textbf{Libro(PDF):}Matem{\'a}tica Discreta "Teoria de Grafos"\\
-\textbf{autores:} Merce Claverol, Ester Simo y Marisa Zaragoza\\
-\textbf{Tema 2:} p{\'a}ginas(38-39)\\[1cm]
-• Este art{\'i}culo nos permiti{\'o} un analisi mas profundo sobre las carateristicas y formas de los grafos hamiltonianos\\
-\item \textbf{Libro(PDF):} Teorema de Dirac y Ore (aplicaciones de la matetica discreta en la vide real)\\[1cm]
-• Este art{\'i}culo nos permiti{\'o} un mejor an{\'a}lisis de los teoremas de Dirac y Ore, loscuales nos permiten la verificacion de un grafo y descubrir si es o no es hamiltoniano\\ 
-\textbf{autores:} Alberto Conejero y Cristian J{\'o}rdan\\[1cm]  
-\item \textbf{Video(Tutorial):}Introducci{\'o}n a los Grafos con igraph\\[1cm]
-• Este tutorial nos permiti{\'o} una mejor visualizacion respecto a lo que ser{\'a} cuando aplicamos grafos en Lenguaje R\\
 \item \textbf{Network Analysis and Visualization with R and igraph}\\[1cm]
-• This page gave us information about the various functions that we can use in Rstudio and also about the igraph package which will help us in the graph drawings in Rstudio\\[10cm]
+• This page gave us information about the various functions that we can use in Rstudio and also about the igraph package which will help us in the graph drawings in Rstudio\\
+
+\item 
+\item 
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{DISE\~{N}O DEL EXPERIMENTO}
+\section{\large\bf DISE\~{N}O DEL EXPERIMENTO}
 \subsection{¿Es G hamiltoniano?}
 \begin{itemize}
 	\item No existe ningún método general v{\'a}lido aplicable a todos los grafos para determinar si es o no hamiltoniano.
 	\item	El m{\'e}todo que trataremos a continuaci{\'o}n es válido, en t{\'e}rminos generales, si el grafo tiene v{\'e}rtices de grado dos y no tiene un gran n{\'u}mero de aristas (aunque la aplicabilidad o no del m{\'e}todo depende siempre del grafo en concreto).
 \end{itemize}
 
-\subsection{¿En qué tipo de m{\'e}todo se trata?}
+\subsection{¿Qué m{\'e}todo utilizaremos?}
 \begin{itemize}
-	\item El m{\'e}todo es constructivista, buscando no s{\'o}lo la existencia sino el ciclo hamiltoniano, caso de que exista.
+	\item El m{\'e}todo será constructivista, buscando no s{\'o}lo la existencia sino el ciclo hamiltoniano, caso de que exista.
 \end{itemize}
 
 \subsection{¿En qu{\'e} se apoya?}
@@ -137,7 +129,7 @@ Es un tipo de lenguaje de programaci{\'o}n el cual es una implementaci{\'o}n del
 	\item[Regla 4:] Si el grafo es realmente hamiltoniano, con la construcci{\'o}n ?obligada? que estamos realizando no podemos encontrar un ciclo que contenga un número de vértices menor que $|v|$.
 \end{enumerate}
 
-\section{IMPLEMENTACI{\'O}N EN R}
+\section{\large\bf IMPLEMENTACI{\'O}N EN R}
 
 \subsection{Funciones y t{\'e}cnicas a usar}
 
@@ -150,3 +142,4 @@ Es un tipo de lenguaje de programaci{\'o}n el cual es una implementaci{\'o}n del
 	
 \end{enumerate}
 \end{document}
+
