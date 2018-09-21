@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.31)  20 SEP 2018 20:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.31)  21 SEP 2018 14:34
 entering extended mode
 **./Proyecto_Primera_Parte.tex
 (Proyecto_Primera_Parte.tex
@@ -138,11 +138,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5.5> on input line 33.
 
-Underfull \hbox (badness 1975) in paragraph at lines 58--61
-[]\OT1/ptm/b/n/10 *Presentaci[]on del prob-lema gen-eral so-bre []el que
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 58--61
 
  []
@@ -183,17 +178,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--84
  []
 
 
-Underfull \hbox (badness 5245) in paragraph at lines 91--95
+Underfull \hbox (badness 5245) in paragraph at lines 92--96
 \OT1/ptm/m/n/10 so-bre las cara-ter-is-ti-cas y for-mas de los grafos
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--95
+Underfull \hbox (badness 10000) in paragraph at lines 92--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--98
+Underfull \hbox (badness 10000) in paragraph at lines 96--99
 
  []
 
@@ -201,31 +196,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--98
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 98--100
+Underfull \hbox (badness 10000) in paragraph at lines 99--101
 
  []
 
-[2
 
-] (Proyecto_Primera_Parte.aux) ) 
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
+
+ []
+
+[2] (Proyecto_Primera_Parte.aux) ) 
 Here is how much of TeX's memory you used:
- 1087 strings out of 492973
- 20487 string characters out of 3128021
+ 1089 strings out of 492973
+ 20502 string characters out of 3128021
  85881 words of memory out of 3000000
- 5021 multiletter control sequences out of 15000+200000
- 35931 words of font info for 69 fonts, out of 3000000 for 9000
+ 5022 multiletter control sequences out of 15000+200000
+ 37067 words of font info for 70 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 26i,4n,19p,315b,218s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/HP/AppData/Local/Programs/MiKTeX 2.9/
-fonts/enc/dvips/base/8r.enc}<C:/Users/HP/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/HP/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/HP/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/HP/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Proyecto_Primera_Parte.pdf (2 pages, 67142 bytes).
+ 26i,4n,19p,347b,218s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/HP/AppData/Local/Programs/MiKTeX 2.
+9/fonts/enc/dvips/base/8r.enc}<C:/Users/HP/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/HP/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/HP/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/HP/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/HP
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:
+/Users/HP/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C
+:/Users/HP/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb>
+<C:/Users/HP/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
+><C:/Users/HP/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.p
+fb>
+Output written on Proyecto_Primera_Parte.pdf (2 pages, 106806 bytes).
 PDF statistics:
- 30 PDF objects out of 1000 (max. 8388607)
+ 46 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

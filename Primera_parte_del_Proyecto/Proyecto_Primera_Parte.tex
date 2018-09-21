@@ -1,8 +1,8 @@
-% Queremos hacer en el formato IEEE
-% Entonces requeriremos de otra entrada diferente a la usual...
+%Queremos hacer en el formato IEEE
+%Entonces requeriremos de otra entrada diferente a la usual...
 % \documentclass[11pt,a4paper]{article}
 
-% Nos hemos guiado de una plantilla ejemplo.
+%Nos hemos guiado de una plantilla ejemplo.
 
 \documentclass[journal]{IEEEtran}
 \hyphenation{op-tical net-work semi-conduc-tor}%PARA arreglar el abstract y los romanos
@@ -22,7 +22,7 @@
 %\usepackage{multicol}
 
 \title{\LARGE \bf
-		Verificación de la existencia de un ciclo Hamiltoniano en un grafo aleatorio*}
+		Verificaci{\'o}n de la existencia de un ciclo Hamiltoniano en un grafo aleatorio*}
 
 \author{Maquera Briguitte$^{1}$, Farut Jaafar$^{2}$ y Rivera Franklin$^{3}$}
 
@@ -41,23 +41,23 @@
 	
 	Este trabajo tiene que contener...
 	Este documento es un ejemplo de formato apegado a
-	las normas de IEEE para escribir artículos representativos de un
+	las normas de IEEE para escribir art{\'i}culos representativos de un
 	proyecto realizado. Los autores deben seguir las instrucciones,
 	incluyendo formato y tamaño de papel para mantener el
-	estándar de publicación. Este documento puede interpretarse
-	como un set de instrucciones para escribir su artículo o como una
-	plantilla para hacerlo. Como habrá notado, esta primera sección
+	estándar de publicaci{\'o}n. Este documento puede interpretarse
+	como un set de instrucciones para escribir su art{\'i}culo o como una
+	plantilla para hacerlo. Como habrá notado, esta primera secci{\'o}n
 	es para generar 
 
 \end{abstract}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 	
-\section{INTRODUCCIÓN}
+\section{INTRODUCCI{\'O}N}
 
-{\bf *Presentación del problema general sobre él que versará el trabajo y cómo se integra dentro del uso del lenguaje R y del curso.\\
-*Objetivo del estudio\\
-*Organización del informe\\ }
+{\bf . Presentaci{\'o}n del problema general sobre {\'e}l que versar{\'a} el trabajo y c{\'o}mo se integra dentro del uso del lenguaje R y del curso.\\
+. Objetivo del estudio\\
+. Organización del informe\\ }
 
 \vspace{0.5cm}
 • \textbf{Grafo}: Es un diagrama que representa mediante vertices y aristas las relaciones entre pares de elementos y que se usa para resolver problemas l{\'o}gicos, topol{\'o}gicos y de c{\'a}lculo combinatorio.\\
@@ -80,12 +80,13 @@ Es un tipo de lenguaje de programaci{\'o}n el cual es una implementaci{\'o}n del
 
 • Es la verificaci{\'o}n de un grafo y determinar si es o no es hamiltoniano  pues ya que aunque no hay condici{\'o}n o formula totalmente eficiente para su demostracion, podemos aproximarnos utilizando ciertas condiciones.\\
 • El implemento de la programacion mediante el uso del Lenguaje R en nuestro proyecto para dicha verificacion\\
-• El uso de algunas formulas y teoremas estadisticos para la determinaci{\'o}n de un grafo y verificar si es o no es hamiltoniano\\[5cm]
+• El uso de algunas formulas y teoremas estadisticos para la determinaci{\'o}n de un grafo y verificar si es o no es hamiltoniano\\[6cm]
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
 \section{ESTADO DEL ARTE}
-{\bf *Breve mención del aporte que otros artículos científicos han realizado para este problema.\\
-*Mención de al menos 3 artículos científicos que mencionan el problema y las variantes realizadas}
+{\bf . Breve menci{\'o}n del aporte que otros art{\'i}culos cient{\'i}ficos han realizado para este problema.\\
+. Menci{\'o}n de al menos 3 art{\'i}culos científicos que mencionan el problema y las variantes realizadas}
 \begin{enumerate}
 
 \item \textbf{Libro(PDF):}Matem{\'a}tica Discreta "Teoria de Grafos"\\
@@ -98,10 +99,54 @@ Es un tipo de lenguaje de programaci{\'o}n el cual es una implementaci{\'o}n del
 \item \textbf{Video(Tutorial):}Introducci{\'o}n a los Grafos con igraph\\[1cm]
 • Este tutorial nos permiti{\'o} una mejor visualizacion respecto a lo que ser{\'a} cuando aplicamos grafos en Lenguaje R\\
 \item \textbf{Network Analysis and Visualization with R and igraph}\\[1cm]
-• This page gave us information about the various functions that we can use in Rstudio and also about the igraph package which will help us in the graph drawings in Rstudio
-
+• This page gave us information about the various functions that we can use in Rstudio and also about the igraph package which will help us in the graph drawings in Rstudio\\[10cm]
 \end{enumerate}
 
-\section{DISEÑO DEL EXPERIMENTO}
-{\bf *Descripción de los objetos, funciones y técnicas a utilizar. }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{DISE\~{N}O DEL EXPERIMENTO}
+\subsection{¿Es G hamiltoniano?}
+\begin{itemize}
+	\item No existe ningún método general v{\'a}lido aplicable a todos los grafos para determinar si es o no hamiltoniano.
+	\item	El m{\'e}todo que trataremos a continuaci{\'o}n es válido, en t{\'e}rminos generales, si el grafo tiene v{\'e}rtices de grado dos y no tiene un gran n{\'u}mero de aristas (aunque la aplicabilidad o no del m{\'e}todo depende siempre del grafo en concreto).
+\end{itemize}
+
+\subsection{¿En qué tipo de m{\'e}todo se trata?}
+\begin{itemize}
+	\item El m{\'e}todo es constructivista, buscando no s{\'o}lo la existencia sino el ciclo hamiltoniano, caso de que exista.
+\end{itemize}
+
+\subsection{¿En qu{\'e} se apoya?}
+\begin{itemize}
+	\item El m{\'e}todo se apoya en el hecho de que existe un ciclo hamiltoniano, éste debe contener exactamente dos de las aristas de cada uno de los v{\'e}rtices (por definición de ciclo).
+\end{itemize}
+
+\subsection{Estrategia}
+\begin{itemize}
+	\item	Dado un grafo no dirigido G, con $|v|>2$, suponemos que tiene ciclo hamiltoniano e intentaremos construirlo a partir de cuatro reglas.
+	\item	Si las reglas 1 o 4 no se cumplen, el grafo no ser{\'a} hamiltoniano.
+	\item En caso contrario habremos obtenido, tras un n{\'u}mero determinado de pasos, un ciclo hamiltoniano en G.
+\end{itemize}
+
+\subsection{Reglas}
+	Suponemos que existe un ciclo hamiltoniano C en G.
+\begin{enumerate}
+	\item[Regla 1:]  Si existe ciclo hamiltoniano en G entonces todos los v{\'e}rtices tienen grado mayor o igual que dos.
+	\item[Regla 2:] Sea v un v{\'e}rtice de grado 2. Entonces las dos aristas incidentes en v deben pertenecer al ciclo C.
+	\item[Regla 3:] Si v es un vértice de grado mayor que 2, y ya hemos incorporado al ciclo C que estamos reconstruyendo dos de sus aristas, el resto de aristas incidentes en v deben ser desechadas.
+	\item[Regla 4:] Si el grafo es realmente hamiltoniano, con la construcci{\'o}n ?obligada? que estamos realizando no podemos encontrar un ciclo que contenga un número de vértices menor que $|v|$.
+\end{enumerate}
+
+\section{IMPLEMENTACI{\'O}N EN R}
+
+\subsection{Funciones y t{\'e}cnicas a usar}
+
+\begin{enumerate}
+	\item{\bf Plot:}\\ La funci{\'o}n plot es una función gen{\'e}rica para la representaci{\'o}n gr{\'a}fica de objetos en R. Los gr{\'a}ficos m{\'a}s sencillos que permite generar esta funci{\'o}n son nubes de puntos (x, y).
+	
+	\item{\bf Grafos con igraph:}\\ El paquete para Igraph, necesita que se le presente los datos de la matriz de adyacencia por parejas. Es decir, una matriz de doble entrada convencional (tambi{\'e}n llamada sociomatriz, tabla de confundido o tabla de concordancia) ha de pasarse al formato de igraph.
+	
+	\item{\bf Archivos CSV:}\\ Archivo de texto que contiene una serie de valores separados por comas. Los valores pueden ser cualquier cosa, desde n{\'u}meros de un presupuesto de una hoja de c{\'a}lculo, hasta nombres y descripciones de una lista de clientes de un negocio.
+	
+\end{enumerate}
 \end{document}
