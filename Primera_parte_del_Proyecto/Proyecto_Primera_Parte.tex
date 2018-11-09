@@ -20,18 +20,22 @@
 %\usepackage{multicol}
 %\usepackage{graphicx}
 %\usepackage{multicol}
-
+\usepackage{endnotes}
 \title{\LARGE \bf
-		Verificaci{\'o}n de la existencia de un ciclo Hamiltoniano en un grafo aleatorio*}
+		Verificación de la existencia de un ciclo Hamiltoniano en un grafo aleatorio}
 
-\author{Maquera Briguitte$^{1}$, Farut Jaafar$^{2}$ y Rivera Franklin$^{3}$}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+
 \maketitle
+{Maquera Briguitte\footnote{Estudiante de Matemática-código 20162254B}, Farut Jaafar\footnote{Estudiante de Matemática-código 	20161395A} y Rivera Franklin\footnote{Estudiante de Ciencias de la Computación-código 20161331C}}
+\vspace{10mm}
 \thispagestyle{empty}
+
 \pagestyle{empty}
 
 
@@ -43,7 +47,7 @@
 
 \begin{abstract}
 	
-	El proyecto trata sobre la implementaci{\o'}n de un algoritmo que nos ayude a comprobar si un grafo aleatorio es Hamiltoniano  con la ayuda del paquete \textit{igraph}, librerias y funciones que ofrecen en lenguaje R. Utilizaci{\o'}n del algoritmo Backtracking para poder encontrar diferentes soluciones.
+	El proyecto trata sobre la implementación de un algoritmo que nos ayude a comprobar si un grafo aleatorio es Hamiltoniano  con la ayuda del paquete \textit{igraph}, librerias y funciones que ofrecen en lenguaje R. Utilización del algoritmo Backtracking para poder encontrar diferentes soluciones.
 
 \end{abstract}
 
@@ -54,7 +58,7 @@
  {\bf Objetivos:}\\
  \begin{enumerate}
  	\item El objetivo de nuestro proyecto es encontrar si existe o no un {\bf Ciclo Hamiltoniano} en un grafo aleatorio dado sus números de aristas y vertices con ayuda de los paquetes que R ofrece.
- 	\item Utilizaci{\o'}n del algoritmo {\textit Backtraking} como herramienta fundamental para lograr dicho objetivo.
+ 	\item Utilización del algoritmo {\textit Backtraking} como herramienta fundamental para lograr dicho objetivo.
  \end{enumerate}
 \vspace{0.2mm}
 {\bf Definiciones previas}\\
@@ -86,12 +90,14 @@ Caracter{\'i}sticas:\\
 \section{\large\bf ESTADO DEL ARTE}
 
 \begin{enumerate}
+\item El problema respecto a los grafos, espec{\'i}ficamente los ciclos hamiltonianos, vienen siendo una adversidad hist{\'o}rica.\\
+En \textbf{1736} Leonhard Euler en uno de sus viajes en Koñigsberg en la costa del Mar B{\'a}ltico, en la Prusia oriental (Rusia) hab{\'i}an siete puentes distribuidos donde plane{\'o} un paseo de manera que saliendo de casa cruce los siete puentes una sola vez cada uno antes de regresar a casa haciendo referencia a los caminos hamiltonianos.\\
+En \textbf{1805} Roman Hamilton se propuso a viajar a 20 ciudades del mundo, representadas como los v{\'e}rtices de un dodecaedro regular, siguiendo las aristas del dodecaedro.\\
+En \textbf{1824} Kirchoff se sirvi{\'o} de la Teor{\'i}a de Grafos para enunciar las leyes que permiten el c{\'a}lculo de voltajes y circuitos el{\'e}ctricos.
 
-\item \textbf{Network Analysis and Visualization with R and igraph}\\[1cm]
-• This page gave us information about the various functions that we can use in Rstudio and also about the igraph package which will help us in the graph drawings in Rstudio\\
+\item \textbf{Network Analysis and Visualization with R and igraph}\\
+ This page gave us information about the various functions that we can use in Rstudio and also about the igraph package which will help us in the graph drawings in Rstudio\\
 
-\item 
-\item 
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -126,7 +132,7 @@ Caracter{\'i}sticas:\\
 	\item[Regla 1:]  Si existe ciclo hamiltoniano en G entonces todos los v{\'e}rtices tienen grado mayor o igual que dos.
 	\item[Regla 2:] Sea v un v{\'e}rtice de grado 2. Entonces las dos aristas incidentes en v deben pertenecer al ciclo C.
 	\item[Regla 3:] Si v es un vértice de grado mayor que 2, y ya hemos incorporado al ciclo C que estamos reconstruyendo dos de sus aristas, el resto de aristas incidentes en v deben ser desechadas.
-	\item[Regla 4:] Si el grafo es realmente hamiltoniano, con la construcci{\'o}n ?obligada? que estamos realizando no podemos encontrar un ciclo que contenga un número de vértices menor que $|v|$.
+	\item[Regla 4:] Si el grafo es realmente hamiltoniano, con la construcci{\'o}n obligada que estamos realizando no podemos encontrar un ciclo que contenga un número de vértices menor que $|v|$.
 \end{enumerate}
 
 \section{\large\bf IMPLEMENTACI{\'O}N EN R}
