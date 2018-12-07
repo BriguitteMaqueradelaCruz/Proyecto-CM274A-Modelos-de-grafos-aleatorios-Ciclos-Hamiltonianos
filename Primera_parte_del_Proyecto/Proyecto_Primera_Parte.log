@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.31)  9 NOV 2018 16:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.31)  7 DEC 2018 17:11
 entering extended mode
 **./Proyecto_Primera_Parte.tex
 (Proyecto_Primera_Parte.tex
@@ -113,10 +113,36 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEtranrubishbin=\box27
 )
 ** ATTENTION: Overriding command lockouts (line 12).
+("C:\Users\HP\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.sty
+"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+ ("C:\Users\HP\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("C:\Users\HP\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.sty
+"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+ ("C:\Users\HP\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\HP\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics
+.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\HP\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.d
+ef"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen126
+\Gin@req@width=\dimen127
+)
 ("C:\Users\HP\AppData\Local\Programs\MiKTeX 2.9\tex\latex\endnotes\endnotes.sty
 "
 \c@endnote=\count95
-\endnotesep=\dimen126
+\endnotesep=\dimen128
 \@enotes=\write3
 ) (Proyecto_Primera_Parte.aux)
 \openout1 = `Proyecto_Primera_Parte.aux'.
@@ -135,6 +161,81 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 
 -- Lines per column: 58 (exact).
+("C:\Users\HP\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count96
+\scratchdimen=\dimen129
+\scratchbox=\box28
+\nofMPsegments=\count97
+\nofMParguments=\count98
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count99
+\MPscratchDim=\dimen130
+\MPnumerator=\count100
+\makeMPintoPDFobject=\count101
+\everyMPtoPDFconversion=\toks17
+)
+("C:\Users\HP\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-bas
+e.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\HP\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.
+sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\HP\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Users\HP\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefineke
+ys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Users\HP\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.st
+y"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Users\HP\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.st
+y"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\HP\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.
+sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\HP\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.s
+ty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\HP\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.s
+ty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Users\HP\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds
+.sty"
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Users\HP\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
 
 LaTeX Warning: No \author given.
 
@@ -201,31 +302,146 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--100
 [1{C:/Users/HP/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
-] [2
-
 ]
-(Proyecto_Primera_Parte.aux) ) 
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 150.
+<parte_1.PNG, id=11, 541.27219pt x 432.11438pt>
+File: parte_1.PNG Graphic file (type png)
+<use parte_1.PNG>
+Package pdftex.def Info: parte_1.PNG  used on input line 152.
+(pdftex.def)             Requested size: 270.63542pt x 216.05666pt.
+<parte_2.PNG, id=12, 407.27156pt x 437.38406pt>
+File: parte_2.PNG Graphic file (type png)
+<use parte_2.PNG>
+Package pdftex.def Info: parte_2.PNG  used on input line 153.
+(pdftex.def)             Requested size: 203.63527pt x 218.69148pt.
+<parte_3.PNG, id=13, 674.52pt x 469.00218pt>
+File: parte_3.PNG Graphic file (type png)
+<use parte_3.PNG>
+Package pdftex.def Info: parte_3.PNG  used on input line 154.
+(pdftex.def)             Requested size: 337.25917pt x 234.50052pt.
+
+Overfull \hbox (18.63542pt too wide) in paragraph at lines 152--155
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--155
+[]
+ []
+
+
+Overfull \hbox (85.25917pt too wide) in paragraph at lines 152--155
+[] 
+ []
+
+[2 <./parte_1.PNG> <./parte_2.PNG> <./parte_3.PNG>]
+<parte_4.PNG, id=19, 407.27156pt x 347.04657pt>
+File: parte_4.PNG Graphic file (type png)
+<use parte_4.PNG>
+Package pdftex.def Info: parte_4.PNG  used on input line 161.
+(pdftex.def)             Requested size: 203.63527pt x 173.52286pt.
+<parte_5.PNG, id=20, 581.92406pt x 456.95718pt>
+File: parte_5.PNG Graphic file (type png)
+<use parte_5.PNG>
+Package pdftex.def Info: parte_5.PNG  used on input line 162.
+(pdftex.def)             Requested size: 290.96132pt x 228.47803pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--163
+[][]
+ []
+
+
+Overfull \hbox (38.96132pt too wide) in paragraph at lines 161--163
+[] 
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 169--171
+\OT1/ptm/m/n/10 Entraremos a un bu-cle en el cu[]al su peor caso
+ []
+
+
+Overfull \hbox (51.40524pt too wide) in paragraph at lines 180--181
+[]\OT1/ptm/b/n/8 Pagina Web-Art[]culo PDF\OT1/ptm/m/n/8 : https://www.ugr.es/ 
+batanero/pages/ARTICULOS/libroR.pdf 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--184
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+[]\OT1/ptm/m/n/8 https://www.r-bloggers.com/lexicographic-permutations-euler-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
+
+ []
+
+
+Overfull \hbox (2.39276pt too wide) in paragraph at lines 186--187
+[]\OT1/ptm/m/n/8 https://stat.ethz.ch/R-manual/R-devel/library/base/html/bitwis
+e.html 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+[]\OT1/ptm/m/n/8 https://stackoverflow.com/questions/4678333/nn-1-what-does-thi
+s-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+
+ []
+
+[3 <./parte_4.PNG> <./parte_5.PNG>] (Proyecto_Primera_Parte.aux) ) 
 Here is how much of TeX's memory you used:
- 1125 strings out of 492973
- 20987 string characters out of 3128021
- 87881 words of memory out of 3000000
- 5048 multiletter control sequences out of 15000+200000
- 40400 words of font info for 74 fonts, out of 3000000 for 9000
+ 2362 strings out of 492973
+ 40041 string characters out of 3128021
+ 109515 words of memory out of 3000000
+ 6214 multiletter control sequences out of 15000+200000
+ 45422 words of font info for 80 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 26i,8n,19p,495b,170s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/HP/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/enc/dvips/base/8r.enc}<C:/Users/HP/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/HP/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/HP/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/HP/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/HP/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/HP
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/H
-P/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Proyecto_Primera_Parte.pdf (2 pages, 98773 bytes).
+ 41i,8n,25p,599b,236s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/HP/
+AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/HP/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Use
+rs/HP/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pf
+b><C:/Users/HP/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmsy7.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/urw/times/utmb8a.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/urw/times/utmbi8a.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/urw/times/utmr8a.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/urw/times/utmri8a.pfb>
+Output written on Proyecto_Primera_Parte.pdf (3 pages, 235723 bytes).
 PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
+ 50 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

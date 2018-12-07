@@ -18,7 +18,7 @@
 %\usepackage{amsfonts}
 %\usepackage{amssymb}
 %\usepackage{multicol}
-%\usepackage{graphicx}
+\usepackage{graphicx}
 %\usepackage{multicol}
 \usepackage{endnotes}
 \title{\LARGE \bf
@@ -147,5 +147,48 @@ En \textbf{1824} Kirchoff se sirvi{\'o} de la Teor{\'i}a de Grafos para enunciar
 	\item{\bf Archivos CSV:}\\ Archivo de texto que contiene una serie de valores separados por comas. Los valores pueden ser cualquier cosa, desde n{\'u}meros de un presupuesto de una hoja de c{\'a}lculo, hasta nombres y descripciones de una lista de clientes de un negocio.
 	
 \end{enumerate}
+\section{\Large{\bf EXPERIMENTOS Y RESULTADOS}}
+\begin{figure}
+	\includegraphics[scale=0.5]{parte_1.PNG}
+	\includegraphics[scale=0.5]{parte_2.PNG}
+	\includegraphics[scale=0.5]{parte_3.PNG}
+\end{figure}
+\newpage
+
+
+
+\begin{figure}
+	\includegraphics[scale=0.5]{parte_4.PNG}
+	\includegraphics[scale=0.5]{parte_5.PNG}
+\end{figure}
+\section{\Large{\bf DISCUSIONES}}
+\begin{enumerate}
+	\item Al ejecutar el c{\'o}digo nos solicitar{\'a} el n{\'u}mero v{\'e}rtices n.
+	\item luego se procede a construir el grafo aleatorio:
+	Usando la funci{\'o}n \textbf{sample()} generamos $n*n$ n{\'u}meros aleatorios entre 0 y 1 , luego con la funci{\'o}n \textbf{matrix()} creamos una matriz(\textbf{adjm}) a partir del conjunto de valores obtenidos el cual ser{\'a} nuestra matriz de adyacencia. luego hacemos sim{\'e}trica la matriz usando la propiedad \textbf{(adjm + t(adjm)/2}.
+	\item Luego pasamos a verificar si el grafo obtenido es hamiltoniano:\\
+	Entraremos a un bucle en el cu{\'a}l su peor caso será n!, donde en el primer \textbf{for} usando la funci{\'o}n \textbf{$are\_adjacent()$} con el cual verificaremos si los v{\'e}rtices de las posiciones 1 hasta n-1 son adyacentes es decir si est{\'a}n conectados por un camino y por {\'u}ltimo verificamos si los v{\'e}rtices de la posici{\'o}n 1 y n son adyacentes. En caso no se cumpla lo anterior nos apoyamos de la funci{\'o}n \textbf{nextPerm()}  para permutar los v{\'e}rtices y seguir con el paso anterior hasta conseguir el grafo deseado.
+	
+	\item ¿C{\'o}mo se puede mejorar sus resultados?\\
+	La complejidad del {\'o}digo es n! por lo cual es muy ineficiente y una manera de mejorarlo es optimizandolo e incluso se podría bajar hasta O(nlogn).
+\end{enumerate}
+\section{\Large {\bf CONCLUSIONES}} 
+Se pud{\'o} implementar un código en R y utilizando el paquete igraph(principalmente la función plot) que R nos ofrece se pudo visualizar dicho grafo aleatorio y verificar que era hamiltoniano.
+\begin{thebibliography}{X}
+	\bibitem{clave-1} \textbf{Libro}: \textit{Invitaci{\'o}n a Matem{\'a}tica Discreta} \\  \emph{Autores}: "Jiri Matousek y Jaroslav Nesetril", (2008) \textit {Universidad de Charles-Praga}, \textbf{p{\'a}ginas}: 105-142
+	\bibitem{clave-2} \textbf{Pagina Web-Video}: https://www.youtube.com/watch?v=LcL-tO2TMlY
+	\bibitem{clave-3} \textbf{Pagina Web-Art{\'i}culo PDF}: https://www.ugr.es/~batanero/pages/ARTICULOS/libroR.pdf
+	\bibitem{clave-4}   \textbf{Libro}: \textit{El arte de programar en R (Un lenguaje para la estad{\'i}stica)} \\  \emph{Autores}: "Julio Sergio Santana y Efra{\'i}n Mateos Farf{\'a}n ", (2014) \textit{Instituto Mexicano de Tecnolog{\'i}a del agua}
+	\bibitem{clave-5} \textbf{Referencias del c{\'o}digo:} \\
+		\begin{enumerate}
+		\item https://www.r-bloggers.com/lexicographic-permutations-euler-problem-24/ \\
+		\item http://igraph.org/r/doc/ \\
+		\item https://stat.ethz.ch/R-manual/R-devel/library/base/html/bitwise.html \\
+		\item https://stackoverflow.com/questions/4678333/nn-1-what-does-this-expression-do \\
+		\item https://www.r-graph-gallery.com/248-igraph-plotting-parameters/ \\
+		\item http://www.shizukalab.com/toolkits/sna/plotting-networks-pt-2 \\
+	\end{enumerate} 
+\end{thebibliography}
+
 \end{document}
 
